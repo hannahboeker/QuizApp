@@ -51,7 +51,6 @@ h2 {
 
 .Frage {
   width: 95%;
-  height: 300px;
   background-color: var(--primary-color);
 
   display: flex;
@@ -95,6 +94,16 @@ button {
 button:hover {
   background-color: var(--secondary-color);
   color: var(--primary-color);
+}
+
+.Frage img {
+  width: 30px;
+  height: 30px;
+  color: var(--secondary-color);
+  opacity: 0.5;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
 
 footer {
