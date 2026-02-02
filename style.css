@@ -2,13 +2,15 @@
 :root {
   --primary-color: #6b006b;
   --secondary-color: #6bff6b;
+  --secondary-color-semi: #6bff6b80;
 
   --display-font: "Almendra-Regular";
+  --text-font: "Arial", Arial, sans-serif;
 }
 
 @font-face {
   font-family: "Almendra-Regular";
-  src: url(../assets/Almendra-Regular.woff) format("woff");
+  src: url(../assets/fonts/Almendra-Regular.woff) format("woff");
 }
 
 * {
@@ -16,30 +18,103 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  background-color: var(--primary-color);
+
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
 }
 
 /* INHALT ------------------------------------*/
+body {
+  background-color: var(--primary-color);
+}
 h1 {
   font-family: var(--display-font);
   color: var(--secondary-color);
   text-align: center;
   font-size: 5em;
 }
-
+h2 {
+  font-family: var(--display-font);
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 140%;
+  line-height: 110%;
+  text-wrap:;
+}
 .Questions {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 2em;
 }
 
 .Frage {
-  width: 80%;
+  width: 95%;
   height: 300px;
   background-color: var(--primary-color);
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  padding: 1em;
 
   box-shadow:
     0 0 20px var(--primary-color),
     0 0 40px var(--secondary-color),
     0 0 60px var(--secondary-color);
+
+  margin: 1em;
+  padding: 1em;
+}
+.Antwort {
+  font-family: var(--text-font);
+  color: var(--secondary-color-semi);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1em;
+  margin: 2em;
+}
+
+.Antwort li:hover {
+  color: var(--secondary-color);
+}
+
+button {
+  text-align: center;
+  font-family: var(--display-font);
+  font-size: 1em;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  align-self: center;
+  margin-top: auto;
+  padding: 1em;
+}
+button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+footer {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  width: 90%;
+  background-color: var(--primary-color);
+  padding: 1em;
+  border-radius: 999px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2em;
+}
+nav img {
+  width: 40px;
+  height: 40px;
 }
