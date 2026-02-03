@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "Almendra-Regular";
-  src: url(../assets/fonts/Almendra-Regular.woff) format("woff");
+  src: url("/assets/fonts/Almendra-Regular.woff") format("woff");
 }
 
 * {
@@ -30,6 +30,8 @@ body {
 }
 h1 {
   font-family: var(--display-font);
+  line-height: 90%;
+  margin-top: 30px;
   color: var(--secondary-color);
   text-align: center;
   font-size: 5em;
@@ -40,7 +42,6 @@ h2 {
   text-align: center;
   font-size: 140%;
   line-height: 110%;
-  text-wrap:;
 }
 .Questions {
   display: flex;
@@ -67,6 +68,7 @@ h2 {
   margin: 1em;
   padding: 1em;
 }
+
 .Antwort {
   font-family: var(--text-font);
   color: var(--secondary-color-semi);
@@ -77,8 +79,22 @@ h2 {
   margin: 2em;
 }
 
-.Antwort li:hover {
+.Kategorie {
+  font-family: var(--text-font);
+  font-style: italic;
+  font-size: 8pt;
+  position: absolute;
+  align-self: center;
+  margin-top: auto;
+  bottom: 10px;
   color: var(--secondary-color);
+  opacity: 0.5;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 90%;
+  gap: 20px;
 }
 
 button {
@@ -89,6 +105,7 @@ button {
   color: var(--secondary-color);
   align-self: center;
   margin-top: auto;
+  margin-bottom: 20px;
   padding: 1em;
 }
 button:hover {
