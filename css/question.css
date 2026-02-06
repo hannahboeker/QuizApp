@@ -1,0 +1,85 @@
+/* INHALT ------------------------------------*/
+
+body {
+  background-color: var(--primary-color);
+}
+
+.Questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em;
+}
+
+.Frage {
+  width: 95%;
+  background-color: var(--primary-color);
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  padding: 1em;
+
+  box-shadow:
+    0 0 20px var(--primary-color),
+    0 0 40px var(--secondary-color),
+    0 0 60px var(--secondary-color);
+
+  margin: 1em;
+  padding: 1em;
+}
+
+.Antwort {
+  font-family: var(--text-font);
+  color: var(--secondary-color-semi);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1em;
+  margin: 2em;
+}
+
+.Kategorie {
+  font-family: var(--text-font);
+  font-style: italic;
+  font-size: 8pt;
+  position: absolute;
+  align-self: center;
+  margin-top: auto;
+  bottom: 10px;
+  color: var(--secondary-color);
+  opacity: 0.5;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 90%;
+  gap: 20px;
+}
+
+button {
+  text-align: center;
+  font-family: var(--display-font);
+  font-size: 1em;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  align-self: center;
+  margin-top: auto;
+  margin-bottom: 20px;
+  padding: 1em;
+}
+button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.Frage img {
+  width: 30px;
+  height: 30px;
+  color: var(--secondary-color);
+  opacity: 0.5;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
