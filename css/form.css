@@ -1,0 +1,60 @@
+body {
+  background-color: var(--primary-color);
+  margin-bottom: 100px;
+}
+footer {
+  z-index: 1;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5%;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5%;
+}
+textarea {
+  min-height: 100px;
+  background-color: var(--secondary-color);
+}
+input {
+  background-color: var(--secondary-color);
+}
+
+label {
+  margin-top: 10%;
+  margin-bottom: 2%;
+}
+
+.submitButton {
+  text-align: center;
+  font-family: var(--display-font);
+  font-size: 1em;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  align-self: center;
+  padding: 1em;
+}
+.submitButton:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+legend {
+  font-family: var(--display-font);
+  line-height: 90%;
+  margin-top: 30px;
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 5em;
+}
+label {
+  font-family: var(--display-font);
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 140%;
+  line-height: 110%;
+}

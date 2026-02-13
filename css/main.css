@@ -43,24 +43,45 @@ h2 {
   font-size: 140%;
   line-height: 110%;
 }
+
+h3 {
+  font-family: var(--display-font);
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 140%;
+  line-height: 110%;
+}
+h4 {
+  font-family: var(--display-font);
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 140%;
+  line-height: 110%;
+}
+
 footer {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 10px;
+  bottom: 2%;
   width: 90%;
   background-color: var(--primary-color);
   padding: 1em;
   border-radius: 999px;
+  box-shadow:
+    0 0 5px var(--secondary-color),
+    0 0 10px var(--secondary-color),
+    0 0 50px var(--secondary-color);
 }
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   gap: 2em;
 }
 nav img {
-  width: 40px;
-  height: 40px;
+  width: 10%; /* kleiner, relativ zum nav */
+  min-width: 2em; /* nie zu klein */
+  height: auto;
 }
