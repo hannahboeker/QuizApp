@@ -4,14 +4,14 @@ body {
   background-color: var(--primary-color);
 }
 
-.Questions {
+.questions {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 2em;
 }
 
-.Frage {
+.frage {
   width: 95%;
   background-color: var(--primary-color);
 
@@ -30,7 +30,7 @@ body {
   padding: 1em;
 }
 
-.Antwort {
+.antwort {
   font-family: var(--text-font);
   color: var(--secondary-color-semi);
   display: flex;
@@ -40,7 +40,11 @@ body {
   margin: 2em;
 }
 
-.Kategorie {
+.antwort.hide {
+  visibility: hidden;
+}
+
+.kategorie {
   font-family: var(--text-font);
   font-style: italic;
   font-size: 8pt;
@@ -74,7 +78,8 @@ button:hover {
   color: var(--primary-color);
 }
 
-.Frage img {
+
+.frage img {
   width: 30px;
   height: 30px;
   color: var(--secondary-color);
