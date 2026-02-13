@@ -78,7 +78,6 @@ button:hover {
   color: var(--primary-color);
 }
 
-
 .frage img {
   width: 30px;
   height: 30px;
@@ -87,4 +86,8 @@ button:hover {
   position: absolute;
   bottom: 10px;
   left: 10px;
+}
+
+.frage img.click {
+  opacity: 1;
 }
