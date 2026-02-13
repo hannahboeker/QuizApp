@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/question.css" />
+    <script src="js/index.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -12,190 +13,192 @@
 
     <!-- FRAGEN------------------------------ -->
     <main>
-      <section class="Questions">
-        <article class="Frage">
+      <section class="question">
+        <article class="frage">
           <h2>
             Wen gibt es am häufigsten in deutschen Unternehmensvorständen,
             Thomas, Uwe oder Frauen?
           </h2>
-          <p class="Antwort">Thomas</p>
-          <button class="Antwort_Button">Lösung einblenden</button>
+          <p class="antwort hide" data-js="antwort">Thomas</p>
+          <button class="antwort_Button" data-js="antwortButton">
+            Zeig mir die Lösung!
+          </button>
 
-          <div class="Kategorie">
+          <div class="kategorie">
             <span>Arbeit</span>
           </div>
 
           <img
             src="assets/image/260202-QuizzApp-Icons-Bookmark.svg"
-            alt="Frage speichern"
-            aria-label="Frage speichern"
+            alt="frage speichern"
+            aria-label="frage speichern"
           />
         </article>
 
-        <article class="Frage">
+        <article class="frage">
           <h2>
             Wie viele Monate ungefähr im Jahr arbeiten Frauen statistisch
             gesehen „gratis“, wenn man den Gender Pay Gap betrachtet?
           </h2>
-          <p class="Antwort">2 Monate</p>
-          <button class="Antwort_Button">Lösung einblenden</button>
+          <p class="antwort">2 Monate</p>
+          <button class="antwort_Button">Lösung einblenden</button>
 
-          <div class="Kategorie">
+          <div class="kategorie">
             <span>Arbeit</span>
             <span>Gender-Pay-Gab</span>
           </div>
           <img
             src="assets/image/260202-QuizzApp-Icons-Bookmark.svg"
-            alt="Frage speichern"
-            aria-label="Frage speichern"
+            alt="frage speichern"
+            aria-label="frage speichern"
           />
         </article>
 
-        <article class="Frage">
+        <article class="frage">
           <h2>
             Wie viele Fälle von Vergewaltigung und sexuellem Übergriff wurden in
             Deutschland laut PKS im Jahr 2024 erfasst?
           </h2>
-          <p class="Antwort">ca. 13.320</p>
-          <button class="Antwort_Button">Lösung einblenden</button>
+          <p class="antwort">ca. 13.320</p>
+          <button class="antwort_Button">Lösung einblenden</button>
 
-          <div class="Kategorie">
+          <div class="kategorie">
             <span>Verbrechen</span>
           </div>
           <img
             src="assets/image/260202-QuizzApp-Icons-Bookmark.svg"
-            alt="Frage speichern"
-            aria-label="Frage speichern"
+            alt="frage speichern"
+            aria-label="frage speichern"
           />
         </article>
 
-        <article class="Frage">
+        <article class="frage">
           <h2>
             Wie hoch ist der Anteil von Frauen in Vorständen der 160 größten
             börsennotierten deutschen Unternehmen ungefähr?
           </h2>
-          <p class="Antwort">ca. 20%</p>
-          <button class="Antwort_Button">Lösung einblenden</button>
+          <p class="antwort">ca. 20%</p>
+          <button class="antwort_Button">Lösung einblenden</button>
 
-          <div class="Kategorie">
+          <div class="kategorie">
             <span>Arbeit</span>
             <span>Wirtschaft</span>
           </div>
           <img
             src="assets/image/260202-QuizzApp-Icons-Bookmark.svg"
-            alt="Frage speichern"
-            aria-label="Frage speichern"
+            alt="frage speichern"
+            aria-label="frage speichern"
           />
         </article>
 
-        <article class="Frage">
+        <article class="frage">
           <h2>
             Wie viele Frauen wurden 2024 in Deutschland durch ihre (Ex-)Partner
             getötet?
           </h2>
-          <p class="Antwort">155</p>
-          <button class="Antwort_Button">Lösung einblenden</button>
+          <p class="antwort">155</p>
+          <button class="antwort_Button">Lösung einblenden</button>
 
-          <div class="Kategorie">
+          <div class="kategorie">
             <span>Femizid</span>
             <span>Verbrechen</span>
           </div>
           <img
             src="assets/image/260202-QuizzApp-Icons-Bookmark.svg"
-            alt="Frage speichern"
-            aria-label="Frage speichern"
+            alt="frage speichern"
+            aria-label="frage speichern"
           />
         </article>
 
-        <article class="Frage">
+        <article class="frage">
           <h2>
             Wie viel mehr unbezahlte Sorge‑ und Pflegearbeit leisten Frauen in
             Deutschland durchschnittlich im Vergleich zu Männern?
           </h2>
-          <p class="Antwort">ca. 44%</p>
-          <button class="Antwort_Button">Lösung einblenden</button>
+          <p class="antwort">ca. 44%</p>
+          <button class="antwort_Button">Lösung einblenden</button>
 
-          <div class="Kategorie">
+          <div class="kategorie">
             <span>Arbeit</span>
             <span>Pflege</span>
           </div>
           <img
             src="assets/image/260202-QuizzApp-Icons-Bookmark.svg"
-            alt="Frage speichern"
-            aria-label="Frage speichern"
+            alt="frage speichern"
+            aria-label="frage speichern"
           />
         </article>
 
-        <article class="Frage">
+        <article class="frage">
           <h2>
             Wie hoch ist der Frauenanteil in der CDU/CSU‑Fraktion im Deutschen
             Bundestag nach der Bundestagswahl 2025?
           </h2>
-          <p class="Antwort">ca. 25%</p>
-          <button class="Antwort_Button">Lösung einblenden</button>
+          <p class="antwort">ca. 25%</p>
+          <button class="antwort_Button">Lösung einblenden</button>
 
-          <div class="Kategorie">
+          <div class="kategorie">
             <span>Politik</span>
           </div>
           <img
             src="assets/image/260202-QuizzApp-Icons-Bookmark.svg"
-            alt="Frage speichern"
-            aria-label="Frage speichern"
+            alt="frage speichern"
+            aria-label="frage speichern"
           />
         </article>
 
-        <article class="Frage">
+        <article class="frage">
           <h2>
             Wie hoch ist der Frauenanteil in der AfD im Deutschen Bundestag nach
             der Bundestagswahl 2025?
           </h2>
-          <p class="Antwort">ca. 12 %</p>
-          <button class="Antwort_Button">Lösung einblenden</button>
+          <p class="antwort">ca. 12 %</p>
+          <button class="antwort_Button">Lösung einblenden</button>
 
-          <div class="Kategorie">
+          <div class="kategorie">
             <span>Politik</span>
           </div>
           <img
             src="assets/image/260202-QuizzApp-Icons-Bookmark.svg"
-            alt="Frage speichern"
-            aria-label="Frage speichern"
+            alt="frage speichern"
+            aria-label="frage speichern"
           />
         </article>
 
-        <article class="Frage">
+        <article class="frage">
           <h2>
             Von allen Straftaten in Deutschland werden ungefähr wie viele von
             Männern begangen?
           </h2>
-          <p class="Antwort">ca. 75%</p>
-          <button class="Antwort_Button">Lösung einblenden</button>
+          <p class="antwort">ca. 75%</p>
+          <button class="antwort_Button">Lösung einblenden</button>
 
-          <div class="Kategorie">
+          <div class="kategorie">
             <span>Verbrechen</span>
           </div>
           <img
             src="assets/image/260202-QuizzApp-Icons-Bookmark.svg"
-            alt="Frage speichern"
-            aria-label="Frage speichern"
+            alt="frage speichern"
+            aria-label="frage speichern"
           />
         </article>
 
-        <article class="Frage">
+        <article class="frage">
           <h2>
             Wie viele der Verkehrsunfälle mit Verletzten oder Todesopfern in
             Hessen wurden 2024 von Männern verursacht?
           </h2>
-          <p class="Antwort">ca. 68%</p>
-          <button class="Antwort_Button">Lösung einblenden</button>
+          <p class="antwort">ca. 68%</p>
+          <button class="antwort_Button">Lösung einblenden</button>
 
-          <div class="Kategorie">
+          <div class="kategorie">
             <span>Verbrechen</span>
           </div>
 
           <img
             src="assets/image/260202-QuizzApp-Icons-Bookmark.svg"
-            alt="Frage speichern"
-            aria-label="Frage speichern"
+            alt="frage speichern"
+            aria-label="frage speichern"
           />
         </article>
       </section>
@@ -206,15 +209,15 @@
         <a href="index.html">
           <img
             src="assets/image/260202-QuizzApp-Icons-Faust-Quizz-2.svg"
-            alt="Übersicht aller Fragen"
-            aria-label="Übersicht aller Fragen"
+            alt="Übersicht aller fragen"
+            aria-label="Übersicht aller fragen"
           />
         </a>
         <a href="html/bookmark.html">
           <img
             src="assets/image/260202-QuizzApp-Icons-Bookmark.svg"
-            alt="Gemerkte Fragen"
-            aria-label="Gemerkte Fragen"
+            alt="Gemerkte fragen"
+            aria-label="Gemerkte fragen"
         /></a>
         <a href="html/profile.html">
           <img
