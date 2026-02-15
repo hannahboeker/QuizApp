@@ -58,3 +58,14 @@ label {
   font-size: 140%;
   line-height: 110%;
 }
+
+span {
+  font-family: var(--text-font);
+  font-style: italic;
+  font-size: 8pt;
+  align-self: flex-end;
+  margin: 2%;
+  bottom: 10px;
+  color: var(--secondary-color);
+  opacity: 1;
+}

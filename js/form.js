@@ -59,3 +59,35 @@ form.addEventListener("submit", (event) => {
   //reset
   event.target.reset();
 });
+
+//COUNTER____________________________________________________
+//1. Ich brauche eine maxlenghtzh für beide formular felder
+//2. ein display unter dem feld das den value wue viel schon eingeben wurde minus die max lenght rechnet
+//3. Wie kann ich die logoc für beide felder nutzen ohne den cide zu wiederhoemn? Eine Funktion erstellen, die für Feld ausrechnet
+
+// /// COUNTER FUNKTION FÜR EIN TEXTFELD_________________________________
+
+// // Counter als veränderbare variable / Textfeld als constante
+// let counter = document.querySelector('[data-js="counter"]');
+// const textFeld = document.querySelector('[data-js="textFeld"]');
+
+// // var erstellen, die bei input die maxlength minus den input value rechnet
+// // Dann textContent von counter verändern, indem er gleichgesetzt wird mit variable
+// textFeld.addEventListener("input", (event) => {
+//   let counterInput = event.target.maxLength - event.target.value.length;
+//   counter.textContent = counterInput;
+// });
+
+//COUNTER FÜR ALLE TEXTFELDER ________________________________________________________
+// querySelectorALL greift auf NodeList zu. Ist kein Array aber Array ähnlich, hat index und lenght
+let counter = document.querySelectorAll('[data-js="counter"]');
+const textFelder = document.querySelectorAll('[data-js="textFeld"]');
+
+// forEach als Methode um über eine Liste von Elementen zu interieren (Mach etwas für jedes Element dieser Sammlung)
+textFelder.forEach((textFelder, index) => {
+  textFelder.addEventListener("input", (event) => {
+    let counterInput = event.target.maxLength - event.target.value.length;
+    // counter.textContent = counterInput; --> klappt nicht weil querySelectorALL kein Element sondern eine Liste ausgibt und eine Liste hat kein textContent, nur jedes einzelne Element der Liste hat das
+    counter[index].textContent = counterInput;
+  });
+});

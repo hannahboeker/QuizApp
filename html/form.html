@@ -16,11 +16,23 @@
         <fieldset>
           <legend>Mach mit!</legend>
           <label for="inputfrage">Deine Frage</label>
-          <textarea name="inputfrage" id="inputfrage"></textarea>
+          <textarea
+            data-js="textFeld"
+            name="inputfrage"
+            id="inputfrage"
+            maxlength="150"
+          ></textarea>
+          <span class="counter" data-js="counter">150</span>
           <label for="inputantwort">Deine Antwort</label>
-          <textarea name="inputantwort" id="inputantwort"></textarea>
-          <label for="nputtag">Tag</label>
-          <input type="text" name="inputtag" id="inputtag" />
+          <textarea
+            data-js="textFeld"
+            name="inputantwort"
+            id="inputantwort"
+            maxlength="150"
+          ></textarea>
+          <span class="counter" data-js="counter">150</span>
+          <label for="inputtag">Tag</label>
+          <input type="text" name="inputtag" id="inputtag" maxlength="150" />
         </fieldset>
 
         <button class="submitButton" data-js="submitButton">Einreichen</button>
